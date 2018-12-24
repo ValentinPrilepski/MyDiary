@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Diary</string>
+    <string name="note_title_label">Title</string>
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1$d note</item>
+        <item quantity="other">%1$d notes</item>
+    </plurals>
+    <string name="subtitle_format">%1$d notes</string>
+    <string name="send_note">Send note</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_note">Delete note?</string>
+    <string name="delete_image">Delete image?</string>
+    <string name="delete_selected">Delete selected?</string>
+    <string name="delete">Delete</string>
+    <string name="deleted">Deleted!</string>
+    <string name="make_photo">Take photo</string>
+    <string name="load_from_gallery">Choose image</string>
+    <string name="send">Send</string>
+    <string name="load_from_flickr">Load from Flickr</string>
+    <string name="searchable">searchable</string>
+    <string name="search">Search</string>
+    <string name="copy">Copy</string>
+    <string name="copy_selected">Copy selected?</string>
+    <string name="copy_complete">Copy complete!</string>
+
+
+</resources>

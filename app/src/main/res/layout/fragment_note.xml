@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_images_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/images_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </ScrollView>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/et_note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll_images_container"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:background="@null"
+        android:hint="@string/note_title_label"
+        android:inputType="textPersonName|textCapSentences|textMultiLine"
+        android:textCursorDrawable="@null"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/et_field_enter_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_note_date"
+        android:layout_below="@id/et_note_title"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@null"
+        android:gravity="top"
+        android:inputType="textPersonName|textCapSentences|textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/btn_note_date"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGray"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/btn_add_cont"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_note_date"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_add_content" />
+
+    <ImageButton
+        android:id="@+id/btn_actions"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_note_date"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_menu_actions" />
+
+</RelativeLayout>

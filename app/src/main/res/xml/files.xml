@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="note_photos" path="."/>
+    <external-path name="my_external_path" path="."/>
+    <external-files-path name="my_external_files_path" path="."/>
+</paths>
